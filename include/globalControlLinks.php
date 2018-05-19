@@ -54,23 +54,18 @@ if(isset( $sugar_config['disc_client']) && $sugar_config['disc_client']){
 	require_once('modules/Sync/headermenu.php');
 }
 
+if (is_admin ($current_user))
+	$global_control_links = array('linkinfo' => array($app_strings=> 'index.php?module=Employees&action=index&query=true'),	'submenu' => '');
 
-$global_control_links['employees'] = array(
-'linkinfo' => array($app_strings['LBL_EMPLOYEES']=> 'index.php?module=Employees&action=index&query=true'),
-'submenu' => ''
-);
-if (
-        is_admin($current_user)
+if (is_admin($current_user))
+	$global_control_links['admin'] = array('linkinfo' => array($app_strings['LBL_ADMIN'] => 'index.php?module=Administration&action=index'), 'submenu' => '');
 
-        ) $global_control_links['admin'] = array(
-
-'linkinfo' => array($app_strings['LBL_ADMIN'] => 'index.php?module=Administration&action=index'),
-'submenu' => ''
-);
+/*** WiSE - Removing "Support" link for all Users
 $global_control_links['training'] = array(
 'linkinfo' => array($app_strings['LBL_TRAINING'] => 'javascript:void(window.open(\'https://suitecrm.com/suitecrm/forum/suite-forum\'))'),
 'submenu' => ''
  );
+*/
 
 /* no longer goes in the menubar - now implemented in the bottom bar.
 $global_control_links['help'] = array(
@@ -84,9 +79,11 @@ $global_control_links['users'] = array(
 'submenu' => ''
 );
 
+/*** WISE - Removing "About" link for all Users
 $global_control_links['about'] = array('linkinfo' => array($app_strings['LNK_ABOUT'] => 'index.php?module=Home&action=About'),
 'submenu' => ''
 );
+*/
 
 if (is_file('custom/include/globalControlLinks.php')) {
     include('custom/include/globalControlLinks.php');

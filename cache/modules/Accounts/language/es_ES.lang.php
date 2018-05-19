@@ -1,5 +1,5 @@
 <?php
-// created: 2018-03-25 17:56:57
+// created: 2018-05-19 23:39:58
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Creado:',
@@ -134,4 +134,5 @@ $mod_strings = array (
   'LBL_AOS_CONTRACTS' => 'Contratos',
   'LBL_AOS_INVOICES' => 'Facturas',
   'LBL_AOS_QUOTES' => 'Cotizaciones',
+  'LBL_CUIT' => 'C.U.I.T.',
 );
