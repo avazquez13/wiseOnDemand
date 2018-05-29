@@ -16499,3 +16499,1763 @@ Sat May 19 23:43:31 2018 [5384][1][DEBUG] process_full_list_query: result is mys
 
 Sat May 19 23:43:31 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
 Sat May 19 23:43:31 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query Execution Time:0.00034093856811523
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query Execution Time:0.00058293342590332
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query Execution Time:0.00042986869812012
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query Execution Time:0.00042104721069336
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:44:31 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:44:31 2018 [5384][-none-][INFO] Query Execution Time:0.00063514709472656
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:44:31 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:44:31 2018 [5384][1][INFO] Query Execution Time:0.00049996376037598
+Sat May 19 23:44:31 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:44:31 2018 [5384][1][INFO] Query Execution Time:0.0008091926574707
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:44:31 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:44:31 2018 [5384][1][INFO] Query Execution Time:0.02544903755188
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:44:31 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:44:31 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:44:31 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:44:31 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:44:31 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:44:32 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:44:32 2018 [5384][1][INFO] Query Execution Time:0.0012669563293457
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:44:32 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query Execution Time:0.00040006637573242
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query Execution Time:0.0004570484161377
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query Execution Time:0.00032901763916016
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query Execution Time:0.00032901763916016
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:45:32 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:45:32 2018 [5384][-none-][INFO] Query Execution Time:0.00043892860412598
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:45:32 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:45:32 2018 [5384][1][INFO] Query Execution Time:0.00032305717468262
+Sat May 19 23:45:32 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:45:32 2018 [5384][1][INFO] Query Execution Time:0.00031399726867676
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:45:32 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:45:32 2018 [5384][1][INFO] Query Execution Time:0.014848947525024
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:45:32 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:45:32 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:45:32 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:45:32 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:45:32 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:45:32 2018 [5384][1][INFO] Query Execution Time:0.00052309036254883
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:45:32 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query Execution Time:0.00034594535827637
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query Execution Time:0.00056600570678711
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query Execution Time:0.00051116943359375
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query Execution Time:0.00043797492980957
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:46:32 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:46:32 2018 [5384][-none-][INFO] Query Execution Time:0.00054192543029785
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:46:32 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:46:32 2018 [5384][1][INFO] Query Execution Time:0.00051307678222656
+Sat May 19 23:46:32 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:46:32 2018 [5384][1][INFO] Query Execution Time:0.0004279613494873
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:46:32 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:46:32 2018 [5384][1][INFO] Query Execution Time:0.023944854736328
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:46:32 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:46:32 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:46:32 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:46:32 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:46:32 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:46:32 2018 [5384][1][INFO] Query Execution Time:0.00059413909912109
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:46:32 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query Execution Time:0.00092005729675293
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query Execution Time:0.00074315071105957
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query Execution Time:0.00177001953125
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query Execution Time:0.0017349720001221
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:47:32 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:47:32 2018 [5384][-none-][INFO] Query Execution Time:0.0056569576263428
+Sat May 19 23:47:32 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:47:32 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:47:33 2018 [5384][1][INFO] Query Execution Time:0.0070250034332275
+Sat May 19 23:47:33 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:47:33 2018 [5384][1][INFO] Query Execution Time:0.023349046707153
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:47:33 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:47:33 2018 [5384][1][INFO] Query Execution Time:0.059693813323975
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:47:33 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:47:33 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:47:33 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:47:33 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:47:33 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:47:33 2018 [5384][1][INFO] Query Execution Time:0.0017209053039551
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:47:33 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query Execution Time:0.00036811828613281
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query Execution Time:0.00055503845214844
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query Execution Time:0.00035691261291504
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query Execution Time:0.00037002563476562
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:48:33 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:48:33 2018 [5384][-none-][INFO] Query Execution Time:0.00052404403686523
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:48:33 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:48:33 2018 [5384][1][INFO] Query Execution Time:0.00040006637573242
+Sat May 19 23:48:33 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:48:33 2018 [5384][1][INFO] Query Execution Time:0.00037407875061035
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:48:33 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:48:33 2018 [5384][1][INFO] Query Execution Time:0.019126176834106
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:48:33 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:48:33 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:48:33 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:48:33 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:48:33 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:48:33 2018 [5384][1][INFO] Query Execution Time:0.00054383277893066
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:48:33 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query Execution Time:0.0003809928894043
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query Execution Time:0.00057196617126465
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query Execution Time:0.00032186508178711
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query Execution Time:0.00031399726867676
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:49:34 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:49:34 2018 [5384][-none-][INFO] Query Execution Time:0.00051093101501465
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:49:34 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:49:34 2018 [5384][1][INFO] Query Execution Time:0.00038409233093262
+Sat May 19 23:49:34 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:49:34 2018 [5384][1][INFO] Query Execution Time:0.00045108795166016
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:49:34 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:49:34 2018 [5384][1][INFO] Query Execution Time:0.025485038757324
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:49:34 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:49:34 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:49:34 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:49:34 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:49:34 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:49:34 2018 [5384][1][INFO] Query Execution Time:0.00078487396240234
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:49:34 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query Execution Time:0.0002901554107666
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query Execution Time:0.00040984153747559
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query Execution Time:0.00027012825012207
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query Execution Time:0.00029087066650391
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:50:34 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:50:34 2018 [5384][-none-][INFO] Query Execution Time:0.00045013427734375
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:50:34 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:50:34 2018 [5384][1][INFO] Query Execution Time:0.00031495094299316
+Sat May 19 23:50:34 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:50:34 2018 [5384][1][INFO] Query Execution Time:0.00027799606323242
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:50:34 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:50:34 2018 [5384][1][INFO] Query Execution Time:0.012927055358887
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:50:34 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:50:34 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:50:34 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:50:34 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:50:34 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:50:34 2018 [5384][1][INFO] Query Execution Time:0.00049805641174316
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:50:34 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query Execution Time:0.00036907196044922
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query Execution Time:0.00041890144348145
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query Execution Time:0.00027585029602051
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query Execution Time:0.00029993057250977
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:51:35 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:51:35 2018 [5384][-none-][INFO] Query Execution Time:0.00044107437133789
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:51:35 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:51:35 2018 [5384][1][INFO] Query Execution Time:0.00030517578125
+Sat May 19 23:51:35 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:51:35 2018 [5384][1][INFO] Query Execution Time:0.00028109550476074
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:51:35 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:51:35 2018 [5384][1][INFO] Query Execution Time:0.013113975524902
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:51:35 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:51:35 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:51:35 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:51:35 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:51:35 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:51:35 2018 [5384][1][INFO] Query Execution Time:0.00054121017456055
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:51:35 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query Execution Time:0.00031185150146484
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query Execution Time:0.00041103363037109
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query Execution Time:0.00028204917907715
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query Execution Time:0.00029587745666504
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:52:35 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:52:35 2018 [5384][-none-][INFO] Query Execution Time:0.00047087669372559
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:52:35 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:52:35 2018 [5384][1][INFO] Query Execution Time:0.00030398368835449
+Sat May 19 23:52:35 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:52:35 2018 [5384][1][INFO] Query Execution Time:0.00029611587524414
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:52:35 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:52:35 2018 [5384][1][INFO] Query Execution Time:0.020663022994995
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:52:35 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:52:35 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:52:35 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:52:35 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:52:35 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:52:35 2018 [5384][1][INFO] Query Execution Time:0.00074315071105957
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:52:35 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query Execution Time:0.00037908554077148
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query Execution Time:0.00039911270141602
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query Execution Time:0.00026202201843262
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query Execution Time:0.00029706954956055
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:53:36 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:53:36 2018 [5384][-none-][INFO] Query Execution Time:0.0004420280456543
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:53:36 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:53:36 2018 [5384][1][INFO] Query Execution Time:0.00030708312988281
+Sat May 19 23:53:36 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:53:36 2018 [5384][1][INFO] Query Execution Time:0.00028204917907715
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:53:36 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:53:36 2018 [5384][1][INFO] Query Execution Time:0.013576984405518
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:53:36 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:53:36 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:53:36 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:53:36 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:53:36 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:53:36 2018 [5384][1][INFO] Query Execution Time:0.00054407119750977
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:53:36 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query Execution Time:0.00029587745666504
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query Execution Time:0.00040793418884277
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query Execution Time:0.00027704238891602
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query Execution Time:0.00029492378234863
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:54:37 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:54:37 2018 [5384][-none-][INFO] Query Execution Time:0.00043511390686035
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:54:37 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:54:37 2018 [5384][1][INFO] Query Execution Time:0.00031805038452148
+Sat May 19 23:54:37 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:54:37 2018 [5384][1][INFO] Query Execution Time:0.00027799606323242
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:54:37 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:54:37 2018 [5384][1][INFO] Query Execution Time:0.013098001480103
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:54:37 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:54:37 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:54:37 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:54:37 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:54:37 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:54:37 2018 [5384][1][INFO] Query Execution Time:0.00057005882263184
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:54:37 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query Execution Time:0.00037193298339844
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query Execution Time:0.00038790702819824
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query Execution Time:0.00026917457580566
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query Execution Time:0.0002899169921875
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:55:38 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:55:38 2018 [5384][-none-][INFO] Query Execution Time:0.00043296813964844
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:55:38 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:55:38 2018 [5384][1][INFO] Query Execution Time:0.00032806396484375
+Sat May 19 23:55:38 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:55:38 2018 [5384][1][INFO] Query Execution Time:0.00028610229492188
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:55:38 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:55:38 2018 [5384][1][INFO] Query Execution Time:0.013427972793579
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:55:38 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:55:38 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:55:38 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:55:38 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:55:38 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:55:38 2018 [5384][1][INFO] Query Execution Time:0.00051188468933105
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:55:38 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query Execution Time:0.00026607513427734
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query Execution Time:0.00042200088500977
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query Execution Time:0.00027203559875488
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query Execution Time:0.00027894973754883
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:56:39 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:56:39 2018 [5384][-none-][INFO] Query Execution Time:0.00042510032653809
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:56:39 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:56:39 2018 [5384][1][INFO] Query Execution Time:0.00031495094299316
+Sat May 19 23:56:39 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:56:39 2018 [5384][1][INFO] Query Execution Time:0.00032401084899902
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:56:39 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:56:39 2018 [5384][1][INFO] Query Execution Time:0.014208078384399
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:56:39 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:56:39 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:56:39 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:56:39 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:56:39 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:56:39 2018 [5384][1][INFO] Query Execution Time:0.00051593780517578
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:56:39 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query Execution Time:0.0003509521484375
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query Execution Time:0.00036501884460449
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query Execution Time:0.00023078918457031
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query Execution Time:0.00025081634521484
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:57:40 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:57:40 2018 [5384][-none-][INFO] Query Execution Time:0.00040602684020996
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:57:40 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:57:40 2018 [5384][1][INFO] Query Execution Time:0.0003669261932373
+Sat May 19 23:57:40 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:57:40 2018 [5384][1][INFO] Query Execution Time:0.00026798248291016
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:57:40 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:57:40 2018 [5384][1][INFO] Query Execution Time:0.012544870376587
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:57:40 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:57:40 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:57:40 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:57:40 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:57:40 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:57:40 2018 [5384][1][INFO] Query Execution Time:0.00052213668823242
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:57:40 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query Execution Time:0.00038814544677734
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query Execution Time:0.00042200088500977
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query Execution Time:0.00032806396484375
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query Execution Time:0.0003359317779541
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:58:48 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:58:48 2018 [5384][-none-][INFO] Query Execution Time:0.00043797492980957
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:58:48 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:58:48 2018 [5384][1][INFO] Query Execution Time:0.00031781196594238
+Sat May 19 23:58:48 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:58:48 2018 [5384][1][INFO] Query Execution Time:0.00031304359436035
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:58:48 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:58:48 2018 [5384][1][INFO] Query Execution Time:0.012823104858398
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:58:48 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:58:48 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:58:48 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:58:48 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:58:48 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:58:48 2018 [5384][1][INFO] Query Execution Time:0.00053620338439941
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:58:48 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] current_language is: es_ES
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheAPC
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheFile
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcache
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemcached
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheMemory
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Using cache backend SugarCacheMemory, since 999 is less than 1000
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheRedis
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCachesMash
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheWincache
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Found cache backend SugarCacheZend
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Found language file: en_us.lang.php
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query Execution Time:0.00034713745117188
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query:SELECT category, name, value FROM config
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query Execution Time:0.00038909912109375
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query Execution Time:0.021317958831787
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '7e980852-88ed-6740-5c7a-5ab2c02da87a'
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query Execution Time:0.00032687187194824
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Hook called: ::after_entry_point
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Including Ext hook file for custom/application
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Hook called: ::after_session_start
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Unable to find SugarController:: get
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] We have an authenticated user id: 1
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Hook called: Users::before_retrieve
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Including module specific hook file for custom/modules/Users
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Retrieve User : SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0
+Sat May 19 23:59:49 2018 [5384][-none-][DEBUG] Limit Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 Start: 0 count: 1
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Sat May 19 23:59:49 2018 [5384][-none-][INFO] Query Execution Time:0.00045585632324219
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] get_user_array query: SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:59:49 2018 [5384][1][INFO] Query:SELECT id, first_name, last_name, user_name FROM users WHERE 1=1 ORDER BY first_name, last_name ASC
+Sat May 19 23:59:49 2018 [5384][1][INFO] Query Execution Time:0.00032281875610352
+Sat May 19 23:59:49 2018 [5384][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Sat May 19 23:59:49 2018 [5384][1][INFO] Query Execution Time:0.00030708312988281
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] SugarBean[User].load_relationships, Loading relationship (reports_to_link).
+Sat May 19 23:59:49 2018 [5384][1][INFO] Query:SELECT 
+                    ea.email_address,
+                    ea.email_address_caps,
+                    ea.invalid_email,
+                    ea.opt_out,
+                    ea.confirm_opt_in,
+                    ea.date_created,
+                    ea.date_modified,
+                    ear.id,
+                    ear.email_address_id,
+                    ear.bean_id,
+                    ear.bean_module,
+                    ear.primary_address,
+                    ear.reply_to_address,
+                    ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE 
+                    ear.bean_module = 'Users'
+                    AND ear.bean_id = '1'
+                    AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Sat May 19 23:59:49 2018 [5384][1][INFO] Query Execution Time:0.013524055480957
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] Hook called: Users::after_retrieve
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] FACTOR AUTH: --------------------- CHECK FACTOR AUtH ---------------------
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] FACTOR AUTH: -------------------------------------------------------------
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] FACTOR AUTH: User needs factor auth, request is not Logout
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] FACTOR AUTH: User does`nt need factor auth
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] Current user is: admin
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] setting cookie ck_login_id_20 to 1
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] setting cookie ck_login_language_20 to es_ES
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] current_language is: es_ES
+Sat May 19 23:59:49 2018 [5384][1][INFO] Found language file: en_us.lang.php
+Sat May 19 23:59:49 2018 [5384][1][INFO] Found language file: es_ES.lang.php
+Sat May 19 23:59:49 2018 [5384][1][INFO] Found custom language file: en_us.lang.php
+Sat May 19 23:59:49 2018 [5384][1][INFO] Found custom language file: es_ES.lang.php
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] Performing action: action_get MODULE: Alerts
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] get_full_list:  order_by = 'alerts.date_entered' and where = 'alerts.assigned_user_id = '1' AND is_read != '1''
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (modified_user_link).
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (created_by_link).
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] SugarBean[Alert].load_relationships, Loading relationship (assigned_user_link).
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] process_order_by: (alerts.date_entered) does not have a vardef entry.
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] process_full_list_query: query is  SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:59:49 2018 [5384][1][INFO] Query: SELECT  alerts.*  , jt0.user_name modified_by_name , jt0.created_by modified_by_name_owner  , 'Users' modified_by_name_mod , jt1.user_name created_by_name , jt1.created_by created_by_name_owner  , 'Users' created_by_name_mod , jt2.user_name assigned_user_name , jt2.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod FROM alerts   LEFT JOIN  users jt0 ON alerts.modified_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0  LEFT JOIN  users jt1 ON alerts.created_by=jt1.id AND jt1.deleted=0
+
+ AND jt1.deleted=0  LEFT JOIN  users jt2 ON alerts.assigned_user_id=jt2.id AND jt2.deleted=0
+
+ AND jt2.deleted=0 where (alerts.assigned_user_id = '1' AND is_read != '1') AND alerts.deleted=0
+Sat May 19 23:59:49 2018 [5384][1][INFO] Query Execution Time:0.00056314468383789
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] process_full_list_query: result is mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 22
+    [lengths] => 
+    [num_rows] => 0
+    [type] => 0
+)
+
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] Hook called: ::server_round_trip
+Sat May 19 23:59:49 2018 [5384][1][DEBUG] Calling MySQLi::disconnect()
